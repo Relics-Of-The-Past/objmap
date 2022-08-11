@@ -298,8 +298,9 @@
 
         <hr>
         <h4 class="subsection-heading">About this map</h4>
-        <p>This object map is an <a href="https://github.com/zeldamods/objmap">open source project</a>. Contributions are welcome.</p>
+        <p>This object map is a fork of this <a href="https://github.com/zeldamods/objmap">open source project</a>. Contributions are welcome.</p>
         <p>For technical documentation about <i>Breath of the Wild</i> and mechanic breakdowns, refer to the <a href="https://zeldamods.org/">ZeldaMods wiki</a>.</p>
+        <p>To return to the main Relics of the Past site, <a href="https://relicsofthepast.dev">click here.</a></p>
       </div>
 
       <div class="leaflet-sidebar-pane" id="spane-settings">
