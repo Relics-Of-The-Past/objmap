@@ -75,12 +75,12 @@ def convert_to_json(file_path, output_path):
     map_type = file_path.parts[-3]
     field_area = file_path.name.split('_')[0]
     save_dir = get_dir(pathlib.Path(f'{output_path}/{map_type}/{field_area}'))
-    with open(file_path, 'rb') as read_file:
-        decompressed = check_compression(read_file.read())
     try:
+        with open(file_path, 'rb') as read_file:
+            decompressed = check_compression(read_file.read())
         data = oead.byml.from_binary(decompressed)
     except Exception as e:
-        print(e)
+        print(f'Error occurred while processing file {file_path.name}:\n{e}')
         return
     with open(save_dir / f'{file_path.name.split(".")[0]}.json', 'wt') as save_file:
         print(f'Saving data from {file_path.name} to {save_file.name}')
